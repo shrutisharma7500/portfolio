@@ -1,0 +1,340 @@
+@import "style.css";
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cedarville+Cursive&family=Jost:wght@300&family=Sedgwick+Ave+Display&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "jost", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 60px;
+  position: fixed;
+  margin-top: 0;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  width: 1000px;
+}
+nav li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+}
+nav .icon {
+  font-size: 1.5rem;
+}
+
+#header {
+  min-height: 85vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(198, 239, 239);
+}
+#header .social {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+#header .social li {
+  list-style: none;
+}
+#header .social li a {
+  color: #000;
+}
+#header .container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-right: 50px;
+}
+#header .container .text-container {
+  width: 500px;
+}
+#header .container .text-container .text h1 {
+  font-size: 3.6rem;
+  font-weight: 700;
+  font-family: "jost";
+}
+#header .container .text-container .text h3 {
+  font-size: 1.3rem;
+  color: rgb(67, 66, 66);
+  font-weight: 600;
+  font-family: "jost";
+}
+#header .container .text-container .text P {
+  color: rgb(155, 153, 153);
+  font-family: "jost";
+  font-weight: 600;
+  line-height: 30px;
+}
+#header .container .text-container .text .contact-btn {
+  background-color: aqua;
+  border: none;
+  height: 35px;
+  width: 120px;
+  border-radius: 15px;
+}
+#header .container .text-container .text a {
+  text-decoration: none;
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about-me {
+  min-height: 110vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(198, 239, 239);
+}
+#about-me .heading {
+  text-align: center;
+  padding: 25px;
+  justify-content: center;
+}
+#about-me .heading h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -100px;
+  font-weight: 800;
+}
+#about-me .heading h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+  font-size: 0.8rem;
+}
+#about-me .about-me-container {
+  display: flex;
+}
+#about-me .about-me-text {
+  padding-top: 70px;
+  padding-left: 53px;
+}
+#about-me .about-me-text .intro p, #about-me .about-me-text .skills p {
+  font-size: 1rem;
+  color: gray;
+  width: 900px;
+  height: 200px;
+  margin-right: -300px;
+  margin-top: -50px;
+}
+#about-me .skills {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -200px;
+}
+#about-me .skills .skill {
+  list-style: none;
+  line-height: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  height: 150px;
+  gap: -30px;
+}
+#about-me .skills .skill .s {
+  width: 170px;
+  background-color: black;
+  box-shadow: 0px 0px 20px aqua;
+}
+#about-me .skills .skill .span {
+  width: var(--percent);
+  height: 10px;
+  background-color: var(--color);
+  box-shadow: 0px 0px 20px aqua;
+}
+
+#box {
+  margin-left: -350px;
+  width: 330px;
+  height: 300px;
+  background-color: rgb(118, 244, 244);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 38%;
+  border-bottom-right-radius: 80%;
+  margin-top: -200px;
+}
+
+#portfolio {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 17px;
+  background-color: rgb(198, 239, 239);
+}
+#portfolio .heading {
+  text-align: center;
+}
+#portfolio .heading h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+#portfolio .heading h3 {
+  font-size: 1.1rem;
+  color: rgb(178, 29, 29);
+}
+#portfolio .container {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+#portfolio .container .project {
+  width: 500px;
+}
+#portfolio .container .project img {
+  width: 400px;
+  height: 250px;
+  border-radius: 30px;
+}
+#portfolio .container .project .text h1 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+#portfolio .container .project .text p {
+  font-size: 1rem;
+  color: gray;
+}
+#portfolio .container .project .text button {
+  background-color: aqua;
+  border: none;
+  height: 35px;
+  width: 120px;
+  border-radius: 15px;
+  width: 80px;
+}
+
+#contact {
+  width: 100%;
+  min-height: 20vh;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(198, 239, 239);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact h1 {
+  font-weight: 900;
+}
+#contact h3 {
+  color: gray;
+  font-size: 0.8rem;
+}
+#contact .container {
+  padding: 75px 75px;
+}
+#contact .container .input {
+  display: flex;
+  gap: 20px;
+}
+#contact .container .input input {
+  padding-left: 30px;
+  width: 320px;
+  height: 50px;
+  background-color: rgb(164, 244, 244);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  box-shadow: 0 0 20px;
+}
+#contact .container .email {
+  display: flex;
+  flex-direction: column;
+}
+#contact .container .email input {
+  width: 665px;
+  height: 50px;
+  padding-left: 30px;
+  background-color: rgb(164, 244, 244);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  box-shadow: 0 0 20px;
+}
+#contact .container .email textarea {
+  height: 200px;
+  width: 665px;
+  padding-left: 30px;
+  padding-top: 30px;
+  background-color: rgb(164, 244, 244);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  box-shadow: 0 0 20px;
+}
+#contact .container button {
+  width: 200px;
+  height: 50px;
+  margin: left 100px;
+  cursor: pointer;
+  background-color: rgb(5, 226, 226);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: 0 0 5px;
+  margin-left: 230px;
+}
+#contact .container button a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: gray;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(18, 204, 204);
+  box-shadow: 0 0 20px;
+}
+#footer .container {
+  padding: 10px 60px;
+}
+#footer .container ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 500px;
+}
+#footer .container ul li a {
+  color: black;
+  font-weight: 600;
+}
+#footer .container h2 {
+  margin-left: 200px;
+  font-size: 0.7rem;
+  margin-top: 50px;
+}/*# sourceMappingURL=style.css.map */
